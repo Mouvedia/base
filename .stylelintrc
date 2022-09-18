@@ -1,0 +1,56 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "alpha-value-notation": "number",
+    "color-named": "never",
+    "color-function-notation": "legacy",
+    "color-hex-case": "upper",
+    "declaration-block-no-redundant-longhand-properties": [
+      true,
+      { "ignoreShorthands": ["/flex/", "grid"] }
+    ],
+    "declaration-block-trailing-semicolon": [
+      "always",
+      { "ignore": "single-declaration" }
+    ],
+    "declaration-property-value-disallowed-list": {
+      "transform-origin": ["center"],
+      "list-style-type": ["upper-latin"]
+    },
+    "font-family-name-quotes": "always-where-required",
+    "function-name-case": [
+      "lower",
+      { "ignoreFunctions": ["/^DXImageTransform.Microsoft.*$/"] }
+    ],
+    "function-url-quotes": "never",
+    "import-notation": "url",
+    "selector-attribute-name-disallowed-list": "className",
+    "selector-attribute-quotes": "always",
+    "selector-list-comma-space-after": "always-single-line",
+    "selector-not-notation": "simple",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      { "ignorePseudoClasses": ["global", "local", "deep"] }
+    ],
+    "selector-pseudo-element-colon-notation": "single",
+    "selector-type-no-unknown": [
+      true,
+      { "ignore": ["custom-elements"] }
+    ],
+    "shorthand-property-no-redundant-values": true,
+    "value-keyword-case": [
+      "lower",
+      { "camelCaseSvgKeywords": true }
+    ],
+    "at-rule-no-vendor-prefix": null,
+    "block-closing-brace-newline-after": null,
+    "media-feature-name-no-vendor-prefix": null,
+    "media-feature-name-no-unknown": null,
+    "number-leading-zero": null,
+    "property-no-vendor-prefix": null,
+    "selector-class-pattern": null,
+    "selector-list-comma-newline-after": null,
+    "selector-no-vendor-prefix": null,
+    "value-no-vendor-prefix": null
+  }
+}
