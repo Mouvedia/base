@@ -1,0 +1,15 @@
+[ES5]
+Chrome >= 7
+Firefox >= 4
+Safari >= 5.1.4
+Edge <= 18
+IE >= 9
+Opera >= 11.60
+
+[production]
+last 1 Chrome version
+Firefox ESR
+last 4 Safari major versions
+Edge >= 12
+IE 11
+Opera 12
