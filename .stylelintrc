@@ -22,6 +22,10 @@
       "lower",
       { "ignoreFunctions": ["/^DXImageTransform.Microsoft.*$/"] }
     ],
+    "function-no-unknown": [
+      true,
+      { "ignoreFunctions": ["v-bind"] }
+    ],
     "function-url-quotes": "never",
     "import-notation": "url",
     "selector-attribute-name-disallowed-list": "className",
