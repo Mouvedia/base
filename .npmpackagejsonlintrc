@@ -1,0 +1,23 @@
+{
+  "rules": {
+    "require-devDependencies": "error",
+    "require-engines": "error",
+    "require-name": "error",
+    "require-private": "error",
+    "require-scripts": "error",
+    "require-version": "error",
+    "no-repeated-dependencies": "error",
+    "no-file-dependencies": "error",
+    "no-absolute-version-dependencies": "error",
+    "config-type": "error",
+    "name-format": "error",
+    "version-format": "error",
+    "prefer-scripts": ["error", [
+      "start",
+      "test"
+    ]],
+    "prefer-alphabetical-dependencies": "warning",
+    "prefer-alphabetical-devDependencies": "warning",
+    "prefer-caret-version-dependencies": "warning"
+  }
+}
