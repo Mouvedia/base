@@ -1,18 +1,25 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": [
+    "stylelint-config-recommended",
+    "@stylistic/stylelint-config"
+  ],
   "rules": {
     "alpha-value-notation": "number",
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["blockless-after-same-name-blockless", "first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ],
     "color-named": "never",
     "color-function-notation": "legacy",
-    "color-hex-case": "upper",
+    "comment-whitespace-inside": "always",
     "declaration-block-no-redundant-longhand-properties": [
       true,
       { "ignoreShorthands": ["/flex/", "grid"] }
     ],
-    "declaration-block-trailing-semicolon": [
-      "always",
-      { "ignore": "single-declaration" }
-    ],
+    "declaration-empty-line-before": "never",
     "declaration-property-value-disallowed-list": {
       "transform-origin": ["center"],
       "list-style-type": ["upper-latin"]
@@ -27,7 +34,16 @@
       { "ignoreFunctions": ["v-bind"] }
     ],
     "function-url-quotes": "never",
+    "hue-degree-notation": "angle",
     "import-notation": "url",
+    "media-feature-range-notation": "prefix",
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ],
     "selector-attribute-name-disallowed-list": "className",
     "selector-attribute-quotes": "always",
     "selector-list-comma-space-after": "always-single-line",
@@ -37,6 +53,7 @@
       { "ignorePseudoClasses": ["global", "local", "deep", "slotted"] }
     ],
     "selector-pseudo-element-colon-notation": "single",
+    "selector-type-case": "lower",
     "selector-type-no-unknown": [
       true,
       { "ignore": ["custom-elements"] }
@@ -46,15 +63,17 @@
       "lower",
       { "camelCaseSvgKeywords": true }
     ],
-    "at-rule-no-vendor-prefix": null,
-    "block-closing-brace-newline-after": null,
-    "media-feature-name-no-vendor-prefix": null,
     "media-feature-name-no-unknown": null,
-    "number-leading-zero": null,
-    "property-no-vendor-prefix": null,
-    "selector-class-pattern": null,
-    "selector-list-comma-newline-after": null,
-    "selector-no-vendor-prefix": null,
-    "value-no-vendor-prefix": null
+
+    "@stylistic/color-hex-case": "upper",
+    "@stylistic/declaration-block-trailing-semicolon": [
+      "always",
+      { "ignore": "single-declaration" }
+    ],
+    "@stylistic/at-rule-semicolon-newline-after": null,
+    "@stylistic/block-closing-brace-newline-after": null,
+    "@stylistic/declaration-colon-newline-after": null,
+    "@stylistic/number-leading-zero": null,
+    "@stylistic/selector-list-comma-newline-after": null
   }
 }
