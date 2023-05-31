@@ -34,7 +34,7 @@
     "selector-not-notation": "simple",
     "selector-pseudo-class-no-unknown": [
       true,
-      { "ignorePseudoClasses": ["global", "local", "deep"] }
+      { "ignorePseudoClasses": ["global", "local", "deep", "slotted"] }
     ],
     "selector-pseudo-element-colon-notation": "single",
     "selector-type-no-unknown": [
