@@ -1,0 +1,37 @@
+{
+  "imports": {
+    "std/": "https://deno.land/std@0.0.0/",
+    "/": "./",
+    "./": "./"
+  },
+  "tasks": {},
+  "lint": {
+    "include": ["src/"],
+    "rules": {
+      "include": [
+        "default-param-last",
+        "eqeqeq",
+        "no-await-in-loop",
+        "no-sparse-arrays",
+        "no-throw-literal"
+      ],
+      "exclude": [
+        "no-case-declarations",
+        "no-control-regex",
+        "no-fallthrough",
+        "no-unused-labels"
+      ]
+    }
+  },
+  "fmt": {
+    "include": ["src/"],
+    "lineWidth": 120,
+    "singleQuote": true
+  },
+  "test": {
+    "include": [
+      "**/__tests__/**/*.{[jt]s?(x),m[jt]s}",
+      "**/*.{test,spec}.{[jt]s?(x),m[jt]s}"
+    ]
+  }
+}
