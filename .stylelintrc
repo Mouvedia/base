@@ -17,7 +17,7 @@
     "comment-whitespace-inside": "always",
     "declaration-block-no-redundant-longhand-properties": [
       true,
-      { "ignoreShorthands": ["/flex/", "grid"] }
+      { "ignoreShorthands": ["/flex/", "grid", "inset"] }
     ],
     "declaration-empty-line-before": "never",
     "declaration-property-value-disallowed-list": {
@@ -31,7 +31,7 @@
     ],
     "function-no-unknown": [
       true,
-      { "ignoreFunctions": ["v-bind"] }
+      { "ignoreFunctions": ["light-dark", "v-bind"] }
     ],
     "function-url-quotes": "never",
     "hue-degree-notation": "angle",
