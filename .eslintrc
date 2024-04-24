@@ -55,6 +55,7 @@
 
     ////////// Warnings //////////
 
+    "array-element-newline": [1, "consistent"],
     "comma-spacing": 1,
     "computed-property-spacing": 1,
     "default-param-last": 1,
