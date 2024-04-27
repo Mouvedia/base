@@ -25,7 +25,8 @@
     "declaration-empty-line-before": "never",
     "declaration-property-value-disallowed-list": {
       "transform-origin": ["center"],
-      "list-style-type": ["upper-latin"]
+      "list-style-type": ["upper-latin"],
+      "font": ["/[^,\"']{3,}('|\")?(?:-apple-system)\\1[,;]{1}/"]
     },
     "font-family-name-quotes": "always-where-required",
     "function-name-case": [
