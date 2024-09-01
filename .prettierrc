@@ -1,0 +1,7 @@
+{
+  "quoteProps": "consistent",
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "vueIndentScriptAndStyle": true,
+  "singleAttributePerLine": true
+}
