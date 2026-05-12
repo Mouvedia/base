@@ -33,5 +33,6 @@
       "**/__tests__/**/*.{[jt]s?(x),m[jt]s}",
       "**/*.{test,spec}.{[jt]s?(x),m[jt]s}"
     ]
-  }
+  },
+  "minimumDependencyAge": "P1D"
 }
